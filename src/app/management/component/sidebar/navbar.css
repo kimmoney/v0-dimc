@@ -1,0 +1,159 @@
+/* 공통 스타일 */
+.navbar {
+    align-items: flex-start; /* 왼쪽 정렬 */
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    background: white;
+    color: #9b9b9b;
+    padding-top: 1%;
+    height: 100vh;
+    width: 10vw;
+}
+
+.logo {
+    padding: 33px;
+    padding-top: 18px;
+    padding-bottom: 9px;
+    width: 135px;
+    height: auto;
+}
+.navbar img {
+    padding: 17px 28px; /* 버튼 내부 패딩 */
+    justify-content:center; /* 왼쪽 정렬 */
+}
+
+.Tab button {
+    display: flex; /* Flexbox 활성화 */
+    flex-direction: row; /* 좌우 정렬 */
+    align-items: center; /* 수직 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding: 17px 28px; /* 버튼 내부 패딩 */
+    border: none solid #9A9AA9;
+    border-radius: 0px 5px 5px 0px;
+    background: none;
+    cursor: pointer;
+    width: 100%; /* 버튼이 부모 너비를 채우도록 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+.Tab {
+    width: 100%;
+}
+
+.Tab button:hover {
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(90deg, #aca9ff3c 0%, rgba(172, 169, 255, 0.00) 91.25%);
+}
+
+.Tab button.active {
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(90deg, #aca9ff3c 0%, rgba(172, 169, 255, 0.00) 91.25%);
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 16px;
+    color: #9A9AA9;
+    /* font-family: Nunito; */
+    font-weight: 600;
+    /* 자동 줄바꿈 안함 */
+    white-space: nowrap;
+}
+
+/* 그룹 컨테이너 */
+.group-container {
+    padding: 0;
+    margin: 0;
+    width: 100%; /* 부모 너비에 맞춤 */
+}
+
+.group-container.active {
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(90deg, #aca9ff3c 0%, rgba(172, 169, 255, 0.00) 91.25%);
+}
+.group-tab button.active{
+    border-radius: 0px 5px 5px 0px;
+    /* background: linear-gradient(90deg, #aca9ff3c 0%, rgba(172, 169, 255, 0.00) 91.25%); */
+    /* background-color: blue; */
+
+}
+.group-tab p.active{
+    color:skyblue;
+    /* 텍스트 언더바 */
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.group-btn {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding: 15px 28px; /* 그룹 버튼 내부 패딩 */
+    /* background-color: #ddd; */
+    cursor: pointer;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    border: none;
+    width: 100%; /* 버튼이 부모 너비를 채우도록 */
+}
+
+.group-btn.active {
+    /* background-color: #aaa; */
+    /* color:skyblue;
+    font-weight: bold; */
+
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(90deg, #aca9ff3c 0%, rgba(172, 169, 255, 0.00) 91.25%);
+
+}
+
+/* 하위 항목 컨테이너 */
+.group-content {
+    overflow: hidden; /* 애니메이션 시 내용이 튀어나오지 않도록 설정 */
+    max-height: 0; /* 초기 높이를 0으로 설정 */
+    transition: max-height 0.3s ease; /* 애니메이션 효과 */
+    width: 100%; /* 하위 항목도 부모 너비에 맞춤 */
+
+}
+
+/* 하위 항목이 표시될 때 */
+.group-content.show {
+    max-height: 200px;
+}
+/* 하위 항목 스타일 */
+.group-content button {
+    padding: 8px 20px; /* 하위 항목의 내부 여백 */
+    background-color: #f9f9f9;
+    border-left: 2px solid #ccc;
+    font-size: 14px;
+    width: 100%; /* 하위 항목도 부모 너비에 맞춤 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+.logout{
+    display: flex;
+    flex-direction: row;
+    margin:0px;
+    width:100%;
+    /* padding:0px 28px; */
+    padding:10px;
+    padding-left: 28px;
+    margin-top:auto;
+    align-items: center;
+    background-color: rgb(233, 231, 231);
+    justify-content: space-between;
+}
+.logout div{
+    flex:7;
+}
+.logout button{
+    flex:4;
+    padding:0%;
+    height: 52px;
+
+}
+.logout button img{
+    width:auto;
+    height:100%;
+    padding:20%;
+}
